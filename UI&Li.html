@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content = "text/html;charset = UTF-8">
+	<title></title>
+	<style type="text/css">
+	/*div ul li
+	{
+		color: #f00;
+	}*/
+
+	.nav ul li
+	{
+		color: #f00;
+	}
+	.item li  /*后代选择器*/
+	{
+		color: #0f0;
+	}
+	.item > li /* 子代选择器*/
+	{
+		color: yellow;
+	}
+	/*1.sitenav中的登录标签为红色*/
+	.sitenav a {
+		color:  #f00;
+	}
+	/*2.导航栏是绿色*/
+	.navi 
+	{
+		color: #0f0;
+	}
+	/*3.主导航栏和侧导航栏里面的文字都是16px并且是微软雅黑*/
+	.navi,.sitenav /*并集选择器*/
+	{
+		font-size: 16px;
+		font-family: "微软雅黑";
+	}
+	/*4.收藏本站字体加粗*/
+	.navi > div /*子元素选择器*/
+	{
+		font-weight: 700;
+	}
+	</style>
+</head>
+<body> 
+	要求：首页 导航 联系 为红色  div ul li 即 div 中的ul 中的li
+	<div class = "nav">
+		<ul>
+			<li>首页
+			<ul>
+				<li>二级</li>
+			</ul>
+			</li>
+			<li>导航</li>
+			<li>联系</li>
+
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li>百度</li>
+			<li>新浪</li>
+			<li>搜狐</li>
+		</ul>
+
+	</div>
+
+子元素选择器，  > 子 指的是 亲儿子 孙子 重孙子不算
+	<ul class = "item">
+		<li>一级菜单
+			<ul>
+				<li> 二级菜单</li>
+			</ul>
+
+		</li>
+	</ul>
+	<div class = "navi">
+		<ul>
+			<li>公司首页</li>
+			<li>公司简介</li>
+			<div>联系本站</div>
+		</ul>
+		<div>收藏本站</div>
+		<div>设为首页</div>
+	</div>
+	<div class= "sitenav">
+		<div class = "site-1">左侧侧导航栏</div>
+		<div class = "site-r"><a href="#">登陆</a> </div>
+
+	</div>
+</body>
+</html>

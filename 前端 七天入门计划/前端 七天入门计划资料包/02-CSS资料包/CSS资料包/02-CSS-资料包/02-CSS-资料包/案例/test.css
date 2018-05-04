@@ -1,0 +1,8 @@
+@import url(import.css); /*  把 import.css 引入到了 test.css里面来 */
+.demo {
+    color: #f00;
+}
+
+.nav {
+    font-size: 14px;
+}

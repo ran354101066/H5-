@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content = "text/html;charset = UTF-8">
+		<title>常用标签</title>
+		<base target = "_blank"/>它的作用就是让我们页面中的所有的A链接都是以新窗口中打开
+	</head>
+	<body>
+		<h4>友情链接</h4>
+		<a href="http://www.baidu.com">搜狐</a>
+		<a href="http://www.baidu.com">谷歌</a>
+		<a href="http://www.baidu.com">百度</a>
+		<a href="http://www.baidu.com" target = "_blank">百度 另外页面打开</a>
+		<a href="#">搜狐</a>
+		<a href="01常用标签.html">新闻页面</a>
+
+		注意：<br/>
+		1.链接必须有 href这个属性 <br/>
+		2.链接地址 必须有 http:// 开头 <br/>
+		3.内部链接只需要写上页面名称就可以了 别忘了加后缀名称哦 <br/>
+		4.target = "_blank" 会启动开一个新的窗口打开页面
+		5.可以添加空链接 #  <a href="#">
+
+
+		锚点定位适合于较长的页面，我们可以点击某个关键词，从而迅速到达页面中的这个位置 <br/>
+		<a href="#life1">3 个人生活</a> 
+		<h3 id="life1">个人生活</h3> 这是去往的地方
+
+		不同页面的猫店链接
+		你想要跳转另一个页面的锚点吗 <a href="01常用标签.html#life">点击这里</a>
+
+
+		登陆 用户注册 不希望被收录的页面 增加 rel="nofollow"
+
+		<a href="login.html" rel = "nofollow">登陆</a>
+	</body>
+</html>

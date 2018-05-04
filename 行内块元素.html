@@ -1,0 +1,56 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content = "text/html;charset = UTF-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: pink; 
+			display: inline; /*块内元素转化为行内元素*/
+		}
+		span
+		{
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			display: block; /*把行内元素转化为块元素*/
+		}
+		/*a
+		{ 因为行内元素没有大小 转换为块级元素就没有大小了
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			display: block; 把行内元素转化为块元素 可以增大点击区域
+		}*/
+
+		a{
+			display: inline-block;
+			width: 80px;
+			height: 30px;
+			background-color: #f40;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<!-- 行内块元素的特点：
+	1.和相邻行内元素（行内块）在一行上，但是之间会有空白缝隙
+	2.默认宽度就是它本身内容的宽度
+	3.高度、行高、外边距以及内边距都可以控制 
+-->
+	<div>123</div>
+	<div>abc</div>
+	<span>你好吗</span>
+	<span>我很好</span>
+	<a href="#">点击窝</a>
+	<a href="#">点击窝</a>
+
+	简单导航栏：
+	<a href="#">首页</a>
+	<a href="#">导航</a>
+	<a href="#">我的</a>
+
+
+</body>
+</html>

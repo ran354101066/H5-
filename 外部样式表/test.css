@@ -1,0 +1,7 @@
+@import url(import.css); /*把import.css 引入到了 test.css*/
+
+.demo
+{
+ 	color: #f00;
+/* 	background-color: pink;*/
+}
